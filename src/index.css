@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +9,118 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.banner-item {
+  @apply max-w-[120px] text-center items-center flex-col justify-center flex font-sans
+}
+.banner-item img {
+  @apply w-12 h-12
+}
+.banner-item p {
+  @apply text-[14px]
+}
+.categories-item {
+  @apply w-[122px] h-[160px] text-center items-center flex-col justify-center flex font-sans border-[1px] border-gray-100
+}
+.categories-item p {
+  @apply text-[14px] font-sans
+}
+.categories-item img {
+  @apply h-20 w-20
+}
+.flashsale_product img {
+  @apply w-[170px] h-[170px]
+}
+.flashsale-item {
+  @apply relative h-[200px] w-[202px] justify-center items-center flex-col mt-2
+}
+.flashsale-item-price {
+  @apply items-center justify-center flex font-semibold text-[#ee4c2c]
+}
+.flashsale-item-sell {
+  @apply items-center justify-center flex relative text-center mx-7
+}
+.banner-shopeemall-item-list{
+  @apply grid grid-rows-2 grid-flow-col relative overflow-x-scroll h-[472px] overflow-y-hidden
+}
+.banner-shopeemall-item {
+  @apply w-[200px] h-[100px]
+}
+.banner-shopeemall-items {
+  @apply relative p-[10px] block
+}
+.daily-discover-item {
+  @apply h-[100px] w-[200px] inline-block mb-44 p-1
+}
+.footer-content {
+  @apply text-justify mt-2 text-[9pt]
+}
+.footer-content b {
+  @apply underline
+}
+.footer-categories {
+  @apply font-sans uppercase text-[13px] text-[#0000008A] font-bold space-y-3
+}
+.footer-categories span {
+  @apply hover:text-[#ee4d2d]
+}
+.footer-customer_service {
+  @apply font-bold uppercase font-sans mb-5
+}
+.footer-customer_service_ul li{
+  @apply hover:text-[#ee4d2d]
+}
+.footer-categories-items {
+  @apply hover:text-[#ee4d2d]
+}
+.footer-policy-items {
+  @apply px-5 border-r border-gray-300 text-[12px] text-gray-500
+}
+.login-section {
+  @apply bg-login-background bg-no-repeat bg-contain bg-center h-[600px] w-[1040px] min-h-[600px] justify-end items-center flex mx-auto my-0
+}
+.login-form {
+  @apply bg-white w-[400px] min-h-[482px] box-border rounded-md overflow-hidden shadow-slate-50
+}
 
+.login-social-button {
+  @apply flex items-center border-gray-400 border-[1px]
+}
+.login-button {
+  @apply bg-[#ee4d2d] w-full h-full py-3 text-white text-[14px] font-medium
+}
+.login-input {
+  @apply rounded-sm h-full w-full bg-white border-gray-300 border-[1px] p-[10px] placeholder:text-gray-400 placeholder:text-[14px]
+}
+.help-categories {
+  @apply flex items-center border-gray-300 border-[1px] my-1 mr-2 p-3
+}
+.help-categories img {
+@apply h-10 w-10
+}
+.help-search {
+  @apply w-[800px] h-[60px] mt-8 flex bg-white items-center justify-between relative box-border p-[2px] rounded-md
+}
+.help-search-img {
+  @apply bg-[#ee4d2d] flex items-center justify-center w-[80px] h-full cursor-pointer rounded-md text-white
+}
+.help-search-input {
+  @apply w-full box-border leading-6 text-[20px] outline-none ml-4
+}
+.help-questions {
+ @apply border-dashed py-4 border-y-[1px] text-[18px]
+}
+.help-info {
+  @apply items-center justify-center flex text-[20px] font-semibold
+}
+.help-info-items {
+  @apply flex items-center justify-center mx-[250px] p-10 space-x-5
+}
+.help-info-item {
+  @apply flex items-center bg-[#fefeff] w-[260px] h-[64px] p-[14px]
+}
+.help-info-item-img {
+ @apply h-10 w-10 mr-2 border-solid border-gray-400 border-[1px] rounded-full items-center justify-center flex
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
