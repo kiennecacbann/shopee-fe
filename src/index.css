@@ -121,6 +121,21 @@ body {
 .help-info-item-img {
  @apply h-10 w-10 mr-2 border-solid border-gray-400 border-[1px] rounded-full items-center justify-center flex
 }
+.product-container-item {
+  @apply flex items-center justify-center mt-4 h-[1rem] whitespace-nowrap
+}
+.product-container-items {
+  @apply flex items-center space-x-1 text-[13px]
+}
+.product-items-img {
+ @apply flex items-center overflow-x-scroll overflow-y-hidden w-full h-full m-auto relative visible
+}
+.product-items-img img{
+  @apply h-[82px] w-[82px] 
+}
+.product-items-label {
+  @apply text-[#757575] w-[110px] capitalize flex-shrink-0 items-center
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
